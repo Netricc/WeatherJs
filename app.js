@@ -34,4 +34,6 @@ async function getDataWeather() {
   document.querySelector(".country").innerHTML = data.sys.country;
 }
 
+document.querySelector(img).src.toLowerCase();
+
 getDataWeather();
