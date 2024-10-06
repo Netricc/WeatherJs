@@ -29,7 +29,7 @@ async function getDataWeather() {
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
   document.querySelector(".weather-icon").src = `images/${
-    data.weather[data.weather.length - 1].main
+    data.weather[data.weather.length - 1].main.toLowerCase()
   }.png`;
   document.querySelector(".country").innerHTML = data.sys.country;
 }
